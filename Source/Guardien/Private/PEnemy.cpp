@@ -11,6 +11,8 @@ APEnemy::APEnemy()
 
 	Speed = 0.5f;
 
+	IsArived = false;
+
 }
 
 // Called when the game starts or when spawned

@@ -21,7 +21,7 @@ protected:
 	virtual void BeginPlay() override;
 
 
-	UPROPERTY(EditAnywhere, Category = "Move")
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Move")
 	FVector NewLocation;
 
 	UPROPERTY(EditAnywhere, Category = "Move")
@@ -29,6 +29,9 @@ protected:
 
 	UPROPERTY(EditAnywhere, Category = "Move")
 	float Speed;
+
+	UPROPERTY(BlueprintReadWrite, Category = "Move")
+	bool IsArived;
 
 public:	
 	// Called every frame
