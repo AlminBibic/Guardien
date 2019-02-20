@@ -12,6 +12,7 @@ APEnemy::APEnemy()
 	Speed = 0.5f;
 
 	IsArived = false;
+	Start = false;
 
 }
 
@@ -32,6 +33,9 @@ void APEnemy::Tick(float DeltaTime)
 
 	FVector Destination = FMath::VInterpTo(CurrentLocation, NewLocation,DeltaTime,Speed);
 
+	if (Start)
+	{
 	SetActorLocationAndRotation(Destination, NewRotation, false, 0, ETeleportType::None);
+	}
 }
 
