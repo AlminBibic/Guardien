@@ -24,7 +24,7 @@ protected:
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Move")
 	FVector NewLocation;
 
-	UPROPERTY(EditAnywhere, Category = "Move")
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category = "Move")
 	FRotator NewRotation;
 
 	UPROPERTY(EditAnywhere, Category = "Move")
